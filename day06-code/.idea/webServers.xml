@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0b557c07-2da4-4536-b883-8e0951b2b8a3" name="10.13.106.230" url="http://10.13.106.230">
+        <fileTransfer rootFolder="/public/home/zhoum" accessType="SFTP" host="10.13.106.230" port="22" sshConfigId="d6e4153e-f2f8-4556-8630-890a5369ceb4" sshConfig="zhoum@10.13.106.230:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
