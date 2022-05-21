@@ -56,5 +56,11 @@ this 当前对象的属性
 
 this 可以用一个构造器去访问另一个构造器
 
+### 四种权限修饰符
 
-
+|                    | Public | protected | (default) | private |
+| ------------------ | :----: | :-------: | :-------: | :-----: |
+| 同一个类           |  yes   |    yes    |    yes    |   yes   |
+| 同一个包           |  yes   |    yes    |    yes    |   no    |
+| 不同包，但父子关系 |  yes   |    yes    |    no     |   no    |
+| 不同包，非父子关系 |  yes   |    no     |    no     |   no    |
