@@ -52,7 +52,7 @@ public class Utility {
     }
 
     /**
-     * 功能：读取键盘输入的整型，长度小于2位
+     * 功能：读取键盘输入的整型，长度小于10位
      * @return 整数
      */
     public static int readInt() {
