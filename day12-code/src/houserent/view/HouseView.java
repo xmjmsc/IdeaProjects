@@ -79,7 +79,7 @@ public class HouseView {
         }
     }
 
-    public void findHouse(){
+    public void findHouse() {
         System.out.println("请输入要查找的房屋编号(-1退出)：");
         int findId = Utility.readInt();
         if (findId == -1) {
@@ -94,7 +94,7 @@ public class HouseView {
         }
     }
 
-    public void updateHouse(){
+    public void updateHouse() {
         System.out.print("请输入要修改的房屋编号(-1退出)：");
         int updateId = Utility.readInt();
         if (updateId == -1) {
@@ -106,29 +106,29 @@ public class HouseView {
             System.out.print("修改id不存在！");
             return;
         }
-        System.out.print("请输入房主姓名("+houses.getName()+")：");
-        String name = Utility.readString(8,"");//不输入信息则默认
-        if(!"".equals(name)){
+        System.out.print("请输入房主姓名(" + houses.getName() + ")：");
+        String name = Utility.readString(8, "");//不输入信息则默认
+        if (!"".equals(name)) {
             houses.setName(name);
         }
-        System.out.print("请输入房主电话("+houses.getPhone()+")：");
-        String phone = Utility.readString(11,"");//不输入信息则默认
-        if(!"".equals(phone)){
+        System.out.print("请输入房主电话(" + houses.getPhone() + ")：");
+        String phone = Utility.readString(11, "");//不输入信息则默认
+        if (!"".equals(phone)) {
             houses.setPhone(phone);
         }
-        System.out.print("请输入房主地址("+houses.getAddress()+")：");
-        String address = Utility.readString(10,"");//不输入信息则默认
-        if(!"".equals(address)){
+        System.out.print("请输入房主地址(" + houses.getAddress() + ")：");
+        String address = Utility.readString(10, "");//不输入信息则默认
+        if (!"".equals(address)) {
             houses.setAddress(address);
         }
-        System.out.print("请输入房主月租("+houses.getRent()+")：");
+        System.out.print("请输入房主月租(" + houses.getRent() + ")：");
         int rent = Utility.readInt(-1);//不输入信息则默认
-        if(rent != -1){
+        if (rent != -1) {
             houses.setRent(rent);
         }
-        System.out.print("请输入房主状态("+houses.getState()+")：");
-        String state = Utility.readString(3,"");//不输入信息则默认
-        if(!"".equals(state)){
+        System.out.print("请输入房主状态(" + houses.getState() + ")：");
+        String state = Utility.readString(3, "");//不输入信息则默认
+        if (!"".equals(state)) {
             houses.setState(state);
         }
         System.out.println("修改成功！");
