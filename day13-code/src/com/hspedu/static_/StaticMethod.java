@@ -6,7 +6,7 @@ public class StaticMethod {
         Stu B = new Stu("B");
         A.payFee(100);
         B.payFee(200);
-
+        //可用类调用，也可用对象调用
         Stu.showFee();
     }
 }
